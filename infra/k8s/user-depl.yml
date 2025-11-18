@@ -1,0 +1,19 @@
+# infra/skaffold.yaml
+apiVersion: skaffold/v4beta6
+kind: Config
+metadata:
+  name: insights-forge
+build:
+  local:
+    push: false
+  artifacts:
+    - image: manvith507/api-gateway
+      context: services/api-gateway
+      sync:
+        manual:
+          - src: '**/*.ts'
+            dest: /usr/src/app
+deploy:
+  kubectl:
+    manifests:
+      - infra/k8s/*

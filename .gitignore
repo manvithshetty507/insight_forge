@@ -1,0 +1,65 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+logs
+*.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cache
+.cache/
+tmp/
+temp/
+*.tmp
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js
+.next/
+out/
+
+# Remix
+.build/
+
+# Vite / Vue / SvelteKit
+.vite/
+.svelte-kit/
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# Storybook
+.storybook-out/
+storybook-static/
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Mac / Linux / Windows junk
+.DS_Store
+Thumbs.db
+
+# Optional OS files
+.swp
+.swo
