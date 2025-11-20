@@ -1,5 +1,8 @@
 // packages/shared/src/utils/index.ts
 
+import { ApiResponse } from "../types/api";
+import { User } from "../types/database-types";
+
 // JWT Utilities
 export const generateTokenPayload = (user: User) => ({
   userId: user.id,

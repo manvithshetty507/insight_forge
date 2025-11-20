@@ -1,20 +1,21 @@
 {
-  "name": "@insightforge/shared",
+  "name": "@insight-forge/shared",
   "version": "1.0.0",
+  "author": "Manvith Shetty",
   "description": "This is shared lib for my app insightForge",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-   "scripts": {
+  "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@types/node": "^24.10.1",
+    "del-cli": "^7.0.0",
     "typescript": "^5.9.3"
   }
 }
